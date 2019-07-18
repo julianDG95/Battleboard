@@ -8,13 +8,13 @@ class Space{
 	virtual void getType(); 
 };
 
-class MajorSpace {
+class MajorSpace : public Space {
 	
 };
 
-class SingleSpace {
+class SingleSpace : public Space {
 	
 };
 
-class MultiSpace {
+class MultiSpace : public Space {
 };
