@@ -7,5 +7,5 @@ class Player {
 
 	transferSpacesTo(Player p);
 
-	deduct(); // Deducts or increments spacesLeft towards zero
+	moveByOne(); // Deducts or increments spacesLeft towards zero
 };
