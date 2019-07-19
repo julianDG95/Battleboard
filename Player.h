@@ -7,5 +7,5 @@ class Player {
 
 	void transferSpacesTo(Player p);
 
-	bool moveByOne(short int spaces); // Deducts or increments spacesLeft towards zero
+	void moveByOne(short int spaces); // Deducts or increments spacesLeft towards zero
 };
