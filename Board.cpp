@@ -1,25 +1,33 @@
 #include <list>
+#include <iterator>
 #include <iostream>
 #include "Space.h "
 
 
 class Board {
+	std::list<Space*> spaceList; // List of pointers to all spaces on board
 
 	// Displays spaces on command line
-	void displayList() {
-		std::cout << "Cannot display list yet";
+	void displayList() {		
+		int i = 0;
+		for (std::list<Space*>::iterator it = spaceList.begin(); !it == spaceList.end(); it++) {
+			std::cout << "Position " << i << " is a "; 
+			(**it).print_detail(); // Space needs a "print_detail" method
+			std::cout << "\n";
+		}
 	}
-
-	std::list<Space*> spaceList; // List of all spaces on board
-
-
-
+		
 	void populateSpaces() {
-
+		// Right now this function will only test the necessary spaces
+		addSpace(s, 4, 4, 270.2);
+		addSpace(m, 4, 4, 360.0);
+		addSpace(b, 4, 360.0);
+		addSpace(b, 0, 4, 360.0);
 	}
-
 
 	private:
+		std::list<Space*> spaceList; // List of pointers to all spaces on board
+
 		void addSpace(char type, unsigned int val, unsigned int dist, float dir) {
 			Space *s;
 			if (type == 's') { // Single player space
