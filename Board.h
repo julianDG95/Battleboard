@@ -6,6 +6,7 @@
 
 class Board
 {
+public:
 	std::list<Space*> spaceList; // List of pointers to all spaces on board
 
 	// Displays spaces on command line
