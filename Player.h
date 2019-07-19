@@ -9,5 +9,10 @@ class Player {
 
 	void moveByOne(short int spaces); // Deducts or increments spacesLeft towards zero
 
-	void setCurrentPosition();
+public:
+	short int getSpacesLeft();
+
+	void setSpacesLeft(short int s);
+
+	void setCurrentPosition(list<Space*>::iterator it);
 };
