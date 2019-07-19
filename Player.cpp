@@ -2,13 +2,18 @@
 #include "stdafx.h"
 #include <string>
 #include <iostream>
-
+#include <iterator>
+#include <list>
+#include "Space.h"
 using namespace std;
 
 class Player 
 {
 	private:
 		short int spacesLeft;
+
+		list<Space*>::iterator currentPosition;  // Pointer at current Space node
+
 	
 	public:
 		
