@@ -1,4 +1,5 @@
 #pragma once
+#include <list>
 
 // A player is someone who is playing the game
 
@@ -15,4 +16,5 @@ public:
 	void setSpacesLeft(short int s);
 
 	void setCurrentPosition(list<Space*>::iterator it);
+	std::list<Space*>::iterator getCurrentPosition(); 
 };
