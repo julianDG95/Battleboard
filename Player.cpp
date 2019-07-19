@@ -52,6 +52,8 @@ public:
 
 	}
 
+public:
+
 	void setCurrentPosition(list<Space*>::iterator it) {
 		currentPosition = it; 
 	}
