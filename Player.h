@@ -8,9 +8,9 @@ class Player {
 
 	void transferSpacesTo(Player p);
 
-	void moveByOne(short int spaces); // Deducts or increments spacesLeft towards zero
-
 public:
+	void moveByOne(); // Deducts or increments spacesLeft towards zero
+
 	short int getSpacesLeft();
 
 	void setSpacesLeft(short int s);

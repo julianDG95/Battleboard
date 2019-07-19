@@ -33,16 +33,16 @@ public:
 		p.setSpacesLeft(this->getSpacesLeft());
 	}
 
-	void moveByOne(short int spaces) // Deducts or increments spacesLeft towards zero
+	void moveByOne() // Deducts or increments spacesLeft towards zero
 	{
-		if (spaces > 0)
+		if (spacesLeft > 0)
 		{
-			spaces--;
+			spacesLeft--;
 			currentPosition--; 
 		}
-		else if (spaces < 0)
+		else if (spacesLeft < 0)
 		{
-			spaces++;
+			spacesLeft++;
 			currentPosition++;
 		}
 		else
