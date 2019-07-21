@@ -15,6 +15,6 @@ public:
 
 	void setSpacesLeft(short int s);
 
-	void setCurrentPosition(list<Space*>::iterator it);
+	void setCurrentPosition(std::list<Space*>::iterator it);
 	std::list<Space*>::iterator getCurrentPosition(); 
 };
