@@ -56,7 +56,8 @@ public:
 		currentPosition = it; 
 	}
 
-	list<Space*>::iterator getCurrentPosition(){
-		return currentPosition;
+	Space* getCurrentPosition(){
+		Space* cPos = (*currentPosition);
+		return cPos;
 	}
 };
