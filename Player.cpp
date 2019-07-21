@@ -38,12 +38,12 @@ public:
 		if (spacesLeft > 0)
 		{
 			spacesLeft--;
-			currentPosition--; 
+			currentPosition++; 
 		}
 		else if (spacesLeft < 0)
 		{
 			spacesLeft++;
-			currentPosition++;
+			currentPosition--;
 		}
 		else
 		{
